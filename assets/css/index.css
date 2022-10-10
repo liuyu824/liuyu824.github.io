@@ -1,0 +1,34 @@
+.researchGroup{
+    color:white;
+    font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align:center;
+    margin-top:55px;
+    font-size:30px;
+}
+.researchGroup img{
+    width: 100px;
+    height:100px;
+    border-radius:100%;
+}
+.nav-menu.navbar li{
+    width:300px;
+}
+
+.peopleContainer{
+    width: 250px;
+    height:auto;
+    margin-bottom: 30px;
+}
+.peopleInTeam img{
+    width: 150px;
+    height:150px;
+    margin: 30px 50px 20px;
+    border-radius:100%;
+    overflow:hidden;
+}
+.peopleInTeam .peopleContainer .peopleName{
+    width: 250px;
+}
+.professor_introduction{
+    font-family: Arial,serif;
+}

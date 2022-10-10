@@ -22,122 +22,26 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link href="assets/css/index.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>
-  .peopleInTeam{
-
-  }
-  .peopleContainer{
-    width: 250px;
-    height:auto;
-    margin-bottom: 30px;
-  }
-  .peopleInTeam img{
-    width: 150px;
-    height:150px;
-    margin: 30px 50px 20px;
-    border-radius:100%;
-    overflow:hidden;
-  }
-  .peopleInTeam .peopleContainer .peopleName{
-    width: 250px;
-  }
-  .professor_introduction{
-    font-family: Arial,serif;
-  }
-
-  </style>
-
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
-      <!-- Left-Up Corner: Prof.Yulei Sui Photo and Introduction-->
-      <div class="profile">
-        <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" alt="" class="img-fluid rounded-square">
-
-        <!-- 使用CSS中的text-align元素替换已被代替的<center></center>标签 -->
-
-<!--        <center>-->
-<!--          <font size="1px">-->
-<!--            <a class="text-light" style="text-align: center;">A/PROF</a>-->
-<!--          </font>-->
-<!--        </center>-->
-
-        <div style="text-align:center">
-          <a class="text-light" style="text-align: center;">
-            Supervisor
-          </a>
+      <div class="researchGroup">
+        <div>
+          <img src="assets/img/researchGroupLogo.png" class="img-fluid rounded-square" alt="">
         </div>
-
-        <h1 class="text-light">
-          <a href="index.html" style="text-align: center;">
-            Yulei Sui
-          </a>
-        </h1>
-
-        <a class="text-light" style="text-align: center;">
-          ....................................................
-        </a>
-
-        <div style="text-align: center">
-          <a class="text-light" style="text-align: center;">
-            <span style="color:white; font-size: 15px">
-              Associate Professor
-            </span>
-          </a>
-        </div>
-
-        <div style="text-align: center">
-          <a class="text-light" style="text-align: center;">
-            <span style="color:white; font-size: 15px">
-              School of Computer Science
-            </span>
-          </a>
-        </div>
-
-        <div style="text-align: center">
-          <a class="text-light" style="text-align: center;">
-            <span style="color:white; font-size: 15px">
-              University of Technology Sydney
-            </span>
-          </a>
-        </div>
-
-        <a class="text-light" style="text-align: center;">
-          ....................................................
-        </a>
-
-        <div style="text-align: center">
-          <a class="social-links mt-3 text-center" href="https://profiles.uts.edu.au/Yulei.Sui">
-            <i class="bx bx-home"></i>
-          </a>
-          <a href="https://profiles.uts.edu.au/Yulei.Sui">
-            <span style="color:white; font-size: 15px">
-              Prof.Yulei.Sui's Profile on UTS
-            </span>
-          </a>
-        </div>
-
-
-        <div style="margin-left: 15px">
-          <a class="social-links mt-3 text-center" href="https://yuleisui.github.io/">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a style="color:white" href="https://profiles.uts.edu.au/Yulei.Sui">
-            <span style="color: white; font-size: 15px">
-              Prof.Yulei.Sui's GitHub Webpage
-            </span>
-          </a>
+        <div>
+          <a>Prof.Yulei Sui</a>
+          <a>Research Group</a>
         </div>
       </div>
 
-      <!-- Left-Down Corner Navigation Bar -->
+      <!-- Left Navigation Bar -->
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li>
@@ -146,28 +50,24 @@
               <span>Home</span>
             </a>
           </li>
-
           <li>
-            <a href="#teams" class="nav-link scrollTo">
+            <a href="teams.html" class="nav-link scrollTo">
               <i class="bx bxl-microsoft-teams"></i>
               <span>Teams</span>
             </a>
           </li>
-
           <li>
             <a href="#about" class="nav-link scrollTo">
               <i class="bx bxs-user-detail"></i>
               <span>About</span>
             </a>
           </li>
-
           <li>
             <a href="#resume" class="nav-link scrollTo">
               <i class="bx bx-file-blank"></i>
               <span>Projects</span>
             </a>
           </li>
-
           <li>
             <a href="#contact" class="nav-link scrollTo">
               <i class="bx bx-envelope"></i>
@@ -191,262 +91,6 @@
   </section>
 
   <main id="main">
-
-    <!-- ======= Teams Section ======= -->
-    <section id="teams" class="teams">
-
-      <div class="container">
-        <div class="section-title">
-          <h2>Meet the Team</h2>
-        </div>
-
-        <!-- Introduction of Supervisor -->
-        <div class="section-title">
-          <span style="color:#0dcaf0;font-size:30px;font-weight: bold">
-            Supervisor
-          </span>
-        </div>
-
-        <!--  Align problem solved by the "display" and "flex-wrap" tag.
-              its width will change to 100% of the current page, and image will be automatically centered.-->
-        <div class="peopleInTeam" style="display: flex;flex-wrap: wrap">
-          <div style="width:250px;text-align: center;margin-left:auto;margin-right:auto;">
-              <a>
-                <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-fluid rounded-square" alt="">
-              </a>
-              <div style="text-align: center">
-                <a>Professor Yulei Sui</a>
-              </div>
-          </div>
-
-          <!-- Professor Yulei Sui's Introduction -->
-          <div style="width:1000px;margin-left:auto;margin-right:auto;">
-            <p style="text-align:justify">
-              Yulei Sui is an Associate Professor at School of Computer Science,
-              Faculty of Engineering and Information Technology, University of Technology Sydney (UTS).
-            </p>
-            <p style="text-align:justify">
-              He is broadly interested in Program Analysis, Secure Software Engineering and Machine Learning.
-              In particular, his research focuses on building fundamental static analysis and verification techniques
-              to improve the reliability and security of modern software systems.
-            </p>
-            <p style="text-align:justify">
-              His recent interest lies at the intersection of programming languages, natural languages and machine learning.
-              Specifically, his current research projects include secure machine learning, software analysis and verification
-              for bug detection through data mining and deep learning.
-            </p>
-          </div>
-        </div>
-
-        <!-- Introduction of PhD Students -->
-        <div class="section-title">
-          <span style="color:#0dcaf0;font-size:30px;font-weight: bold">
-            PhD Students
-          </span>
-        </div>
-
-        <!-- The first PhD Students -->
-        <div style="display: inline;float:left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div class="peopleName" style="text-align: center">
-              <a>first PhD</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The second PhD Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div class="peopleName" style="text-align: center">
-              <a>second PhD</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The third PhD Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div class="peopleName" style="text-align: center">
-              <a>third PhD</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The forth PhD Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div class="peopleName" style="text-align: center">
-              <a>forth PhD</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The fifth PhD Students -->
-        <div style="display: inline;float:left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div class="peopleName" style="text-align: center">
-              <a>fifth PhD</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container" style="clear:both">
-        <!-- Introduction of Postgraduate Students -->
-        <div class="section-title" style="margin-top: 250px">
-          <span style="color:#0dcaf0;font-size:30px;font-weight: bold">
-            Postgraduate Students
-          </span>
-        </div>
-
-        <!-- The first Postgraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline;float: left" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-              <a>first Postgraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The second Postgraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline;float: left" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-              <a>second Postgraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The third Postgraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline;float: left" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-              <a>third Postgraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The forth Postgraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline;float: left" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-              <a>forth Postgraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The fifth Postgraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline;float: left" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-              <a>fifth Postgraduate</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="container" style="clear:both">
-        <!-- Introduction of Undergraduate Students -->
-        <div style="margin-top: 250px">
-          <span style="color:#0dcaf0;font-size:30px;font-weight: bold">
-            Undergraduate Students
-          </span>
-        </div>
-
-        <!-- The first Undergraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" alt="" class="img-fluid rounded-square">
-            </a>
-            <div style="text-align: center">
-              <a>first Undergraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The second Undergraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" alt="" class="img-fluid rounded-square">
-            </a>
-            <div style="text-align: center">
-              <a>second Undergraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The third Undergraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" alt="" class="img-fluid rounded-square">
-            </a>
-            <div style="text-align: center">
-              <a>third Undergraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The forth Undergraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" alt="" class="img-fluid rounded-square">
-            </a>
-            <div style="text-align: center">
-              <a>forth Undergraduate</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- The fifth Undergraduate Students -->
-        <div style="display: inline;float: left" class="peopleInTeam">
-          <div style="display: inline" class="peopleContainer">
-            <a>
-              <img src="assets/img/empty_photo.png" alt="" class="img-fluid rounded-square">
-            </a>
-            <div style="text-align: center">
-              <a>fifth Undergraduate</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Teams Section -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
