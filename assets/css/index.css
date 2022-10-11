@@ -121,7 +121,6 @@
     text-align: center;
     font-style: italic;
 }
-
 .peopleContainer{
     width: 250px;
     height:auto;
@@ -139,4 +138,59 @@
 }
 .professor_introduction{
     font-family: Arial,serif;
+}
+.owl-carousel .owl-loaded {
+    display: block;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.img-gallery .owl-item {
+    box-shadow: 0 9px 32px 0 rgb(0 0 0 / 7%);
+    transform: scale(0.8);
+    transition: all 0.3s ease-in;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+}
+.img-gallery .owl-item.center {
+    transform: scale(1);
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: none;
+}
+.owl-theme .owl-nav {
+    margin-top: 10px;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+}
+[class^="ti-"], [class*=" ti-"] {
+    font-family: 'themify', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 }
