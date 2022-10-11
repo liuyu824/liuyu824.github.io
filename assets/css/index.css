@@ -12,6 +12,10 @@
 }
 .researchGroupText{
     margin-top: 8px;
+    font-weight: bold;
+}
+.navText{
+    font-weight: bold;
 }
 .groupIntroductionContainer{
     text-align: center;
@@ -25,6 +29,7 @@
     margin-right:auto;
     /*border: 2px solid #2c2f3f;*/
     font-size: 45px;
+    font-weight: bold;
     color: #9abdeb;
     margin-bottom: 40px;
 }
@@ -42,6 +47,7 @@
     margin: 60px auto 40px;
     /*border: 2px solid #2c2f3f;*/
     font-size: 45px;
+    font-weight: bold;
     color: #9abdeb;
 }
 .interestModules{
@@ -49,6 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    text-align: center;
 }
 .interestModule{
     width: 33%;
@@ -57,6 +64,8 @@
     width: 190px;
     height:190px;
     /*border-radius:100%;*/
+    max-width:100%;
+    max-height:100%;
 }
 .interestButton{
     width: 100px;
@@ -67,12 +76,24 @@
     border:2px solid;
     border-radius:25px;
 }
+.teamContainer{
+    background-color: #9abdeb;
+    color: white;
+}
+.teamContainer img{
+
+}
+.teamContainer a{
+    font-size: 25px;
+    font-weight: bold;
+}
 .newsSection{
     text-align: center;
     width:100%;
     margin: 60px auto 0;
     /*border: 2px solid #2c2f3f;*/
     font-size: 45px;
+    font-weight: bold;
     color: #9abdeb;
 }
 .newsIntro{
@@ -111,6 +132,7 @@
     margin: 60px auto 0;
     /*border: 2px solid #2c2f3f;*/
     font-size: 45px;
+    font-weight: bold;
     color: #9abdeb;
 }
 .licenseIntro{
@@ -133,8 +155,11 @@
     border-radius:100%;
     overflow:hidden;
 }
-.peopleInTeam .peopleContainer .peopleName{
-    width: 250px;
+.peopleName{
+    width: 100%;
+    height:60px;
+    /*border: 2px solid #2c2f3f;*/
+    text-align: center;
 }
 .professor_introduction{
     font-family: Arial,serif;
