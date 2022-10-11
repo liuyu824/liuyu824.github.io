@@ -39,13 +39,13 @@
 .interestSection{
     text-align: center;
     width:100%;
-    margin: 20px auto 40px;
+    margin: 60px auto 40px;
     /*border: 2px solid #2c2f3f;*/
     font-size: 45px;
     color: #9abdeb;
 }
 .interestModules{
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -58,9 +58,68 @@
     height:190px;
     /*border-radius:100%;*/
 }
-
+.interestButton{
+    width: 100px;
+    height:50px;
+    background-color: #9abdeb;
+    color: white;
+    margin-top: 3px;
+    border:2px solid;
+    border-radius:25px;
+}
+.newsSection{
+    text-align: center;
+    width:100%;
+    margin: 60px auto 0;
+    /*border: 2px solid #2c2f3f;*/
+    font-size: 45px;
+    color: #9abdeb;
+}
+.newsIntro{
+    color: #6c757d;
+    margin-bottom: 40px;
+    width:100%;
+    /*border: 2px solid #2c2f3f;*/
+    text-align: center;
+    font-style: italic;
+}
+.newsModules{
+    width:100%;
+    /*border: 2px solid #2c2f3f;*/
+}
+.newsModules h4{
+    margin-top: 10px;
+}
+.newsModules h5{
+    color: #e87722;
+}
+.newsButton{
+    width: 100px;
+    height:50px;
+    background-color: #e87722;
+    color: white;
+    margin-top: 3px;
+    border:2px solid;
+    border-radius:25px;
+}
 .nav-menu.navbar li{
     width:300px;
+}
+.licenseSection{
+    text-align: center;
+    width:100%;
+    margin: 60px auto 0;
+    /*border: 2px solid #2c2f3f;*/
+    font-size: 45px;
+    color: #9abdeb;
+}
+.licenseIntro{
+    color: #6c757d;
+    margin-bottom: 40px;
+    width:100%;
+    /*border: 2px solid #2c2f3f;*/
+    text-align: center;
+    font-style: italic;
 }
 
 .peopleContainer{

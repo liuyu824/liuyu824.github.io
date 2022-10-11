@@ -161,8 +161,8 @@ a:hover {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
-  color: #fff;
+  background-color: #fff;
+  color: #9abdeb;
   width: 40px;
   height: 40px;
   display: inline-flex;
