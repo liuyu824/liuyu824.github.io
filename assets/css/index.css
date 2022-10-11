@@ -36,8 +36,28 @@
     margin-right:auto;
     font-style: italic;
 }
-
-
+.interestSection{
+    text-align: center;
+    width:100%;
+    margin: 20px auto 40px;
+    /*border: 2px solid #2c2f3f;*/
+    font-size: 45px;
+    color: #9abdeb;
+}
+.interestModules{
+    border: 2px solid #2c2f3f;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.interestModule{
+    width: 33%;
+}
+.interestModule img{
+    width: 190px;
+    height:190px;
+    /*border-radius:100%;*/
+}
 
 .nav-menu.navbar li{
     width:300px;
