@@ -75,6 +75,7 @@
     margin-top: 3px;
     border:2px solid;
     border-radius:25px;
+    font-weight: bold;
 }
 .teamContainer{
     background-color: #9abdeb;
@@ -85,6 +86,16 @@
 }
 .teamContainer a{
     font-size: 25px;
+    font-weight: bold;
+}
+.viewAllButton{
+    width: 240px;
+    height:50px;
+    background-color: #9abdeb;
+    color: white;
+    margin-top: 3px;
+    border:2px solid;
+    border-radius:25px;
     font-weight: bold;
 }
 .newsSection{
@@ -122,6 +133,7 @@
     margin-top: 3px;
     border:2px solid;
     border-radius:25px;
+    font-weight: bold;
 }
 .nav-menu.navbar li{
     width:300px;
