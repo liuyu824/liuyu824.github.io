@@ -18,19 +18,26 @@
     display: flex;
     flex-wrap: wrap
 }
-.universityName{
+.welcome{
     text-align: center;
+    width:100%;
     margin-left: auto;
     margin-right:auto;
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
+    font-size: 45px;
+    color: #9abdeb;
+    margin-bottom: 40px;
 }
 .groupIntroduction{
-    width: 900px;
+    width: 1000px;
     text-align:justify;
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
     margin-left: auto;
     margin-right:auto;
+    font-style: italic;
 }
+
+
 
 .nav-menu.navbar li{
     width:300px;
