@@ -1,15 +1,37 @@
 .researchGroup{
     color:white;
-    font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align:center;
     margin-top:55px;
-    font-size:30px;
+    font-size:25px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .researchGroup img{
     width: 100px;
     height:100px;
     border-radius:100%;
 }
+.researchGroupText{
+    margin-top: 8px;
+}
+.groupIntroductionContainer{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap
+}
+.universityName{
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px solid #2c2f3f;
+}
+.groupIntroduction{
+    width: 900px;
+    text-align:justify;
+    border: 2px solid #2c2f3f;
+    margin-left: auto;
+    margin-right:auto;
+}
+
 .nav-menu.navbar li{
     width:300px;
 }
