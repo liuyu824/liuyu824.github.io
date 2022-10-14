@@ -152,8 +152,8 @@
 .newsModules h4{
     margin-top: 10px;
 }
-.newsModules h5{
-    color: #e87722;
+.newsDetail{
+    font-size: 20px;
 }
 .newsButton{
     width: 100px;
