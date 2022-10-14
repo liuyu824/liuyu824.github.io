@@ -102,10 +102,9 @@
     color: white;
     text-align: center;
     width: 85%;
-    margin: auto;
     font-weight: bold;
     font-style: italic;
-    margin-top: 5px;
+    margin: 5px auto auto;
 }
 .teamContainer{
     background-color: #9abdeb;
@@ -262,3 +261,10 @@
     text-transform: none;
     line-height: 1;
 }
+/*#footer{*/
+/*    background-color: #6c757d;*/
+/*    color: white;*/
+/*    padding: 17px 0;*/
+/*    text-align: center;*/
+/*    border-top: solid 1px #2c3034;*/
+/*}*/

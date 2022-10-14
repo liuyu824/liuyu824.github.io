@@ -933,11 +933,11 @@ section {
   color: #f4f6fd;
   font-size: 14px;
   position: fixed;
-  left: 0;
+  /*left: 0;*/
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #6c757d;
 }
 #footer .copyright {
   text-align: center;
@@ -946,7 +946,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #6c757d;
 }
 @media (max-width: 1199px) {
   #footer {
