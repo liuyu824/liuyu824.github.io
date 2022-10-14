@@ -35,12 +35,16 @@
 }
 .groupIntroduction{
     width: 1000px;
-    text-align:justify;
     /*border: 2px solid #2c2f3f;*/
     margin-left: auto;
     margin-right:auto;
-    font-style: italic;
 
+}
+.groupIntroText{
+    text-align:justify;
+    /*border: 2px solid #2c2f3f;*/
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .interestSection{
     text-align: center;
