@@ -38,13 +38,28 @@
     /*border: 2px solid #2c2f3f;*/
     margin-left: auto;
     margin-right:auto;
-
 }
 .groupIntroText{
     text-align:justify;
     /*border: 2px solid #2c2f3f;*/
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+}
+.recruitIntroduction{
+    width: 1000px;
+    /*border: 2px solid #2c2f3f;*/
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 10px;
+}
+.recruitText{
+    text-align:justify;
+    /*border: 2px solid #2c2f3f;*/
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-style: italic;
 }
 .interestSection{
     text-align: center;
