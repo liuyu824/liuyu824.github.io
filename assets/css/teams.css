@@ -1,5 +1,40 @@
+.professorContainer{
+    display: flex;
+    flex-wrap: wrap
+}
+.profImgName{
+    width:250px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.profImgName img{
+    border-radius:100%;
+}
+.profIntrotext{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.profIntrotext p{
+    text-align: justify;
+}
+.section-title span{
+    color:#0dcaf0;
+    font-size:30px;
+    font-weight: bold;
+}
+.studentContainer{
+    display: flex;
+    flex-wrap: wrap
+}
+.overallContainer{
+    width: 100%;
+    text-align: center;
+    /*border: 2px solid #2c2f3f;*/
+}
 .phdContainer{
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
     width:80%;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +45,7 @@
     margin-left:auto;
     margin-right:auto;
     float:left;
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
 }
 .phd_student img{
     width: 150px;
