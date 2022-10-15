@@ -64,7 +64,7 @@
     color:#6c757d;
 }
 .formerStuTable{
-    border: 2px solid #2c2f3f;
+    border: 2px solid #6c757d;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -72,10 +72,11 @@
     background-color:  #9abdeb;
 }
 .formerStuTable tr{
-    border: 2px solid #2c2f3f;
+    border: 2px solid #6c757d;
 }
-.formerStuTable td{
-    border: 2px solid #2c2f3f;
+.formerStuTable tr td{
+    border: 2px solid #6c757d;
+    width: 25%;
 }
 .formerStuName{
     text-align: left;
