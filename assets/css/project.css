@@ -28,4 +28,15 @@
     width:80%;
     margin-left:auto;
     margin-right:auto;
+    text-align: center;
+}
+.projectName{
+    color:#0dcaf0;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.projectIntro{
+    font-style: italic;
+    text-align: left;
 }
