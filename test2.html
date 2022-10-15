@@ -25,44 +25,34 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-
-<div style="border: 2px solid #2c2f3f;display: flex;flex-wrap: wrap;text-align: center">
-    <div class="peopleInTeam" style="border: 2px solid #2c2f3f;display: flex;flex-wrap: wrap;width: 50%">
-        <div style="border: 2px solid #2c2f3f;width:250px;text-align: center;margin-left:auto;margin-right:auto;">
-            <a>
-                <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-fluid rounded-square" alt="">
+<div class="container">
+    <div class="row" style="margin-left: 15px;margin-right: 15px">
+        <div class="col-md-3 col-sm-3 portfolio-item">
+            <a href="" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content img-circle">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="assets/img/Yuxiang_Lei.png" class="img-fluid rounded-square" alt="">
             </a>
-            <div style="text-align: center">
-                <a>Professor Yulei Sui</a>
-            </div>
-        </div>
-
-        <div style="border: 2px solid #2c2f3f;width:250px;text-align: center;margin-left:auto;margin-right:auto;">
-            <a>
-                <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-                <a>Professor Yulei Sui</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="peopleInTeam" style="border: 2px solid #2c2f3f;display: flex;flex-wrap: wrap;width: 50%">
-        <div style="border: 2px solid #2c2f3f;width:250px;text-align: center;margin-left:auto;margin-right:auto;">
-            <a>
-                <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-                <a>Professor Yulei Sui</a>
-            </div>
-        </div>
-
-        <div style="border: 2px solid #2c2f3f;width:250px;text-align: center;margin-left:auto;margin-right:auto;">
-            <a>
-                <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-fluid rounded-square" alt="">
-            </a>
-            <div style="text-align: center">
-                <a>Professor Yulei Sui</a>
+            <div class="portfolio-caption">
+                <p class="text-muted">description</p>
+                <h3>person.name</h3>
+                <h6 class="job-title">person.role</h6>
+                <p class="email">person.email</p>
+                <ul class="list-inline social-buttons">
+                    <li class="social-button-item"><a href=""><i class="fa fa-{{ network.icon }}"></i></a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#{{ forloop.index }}" aria-expanded="false" aria-controls="">
+                    bio
+                </button>
+                <div class="collapse" id="{{ forloop.index }}">
+                    <div class="card card-block">
+                        <p class="text-muted">person.description</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
