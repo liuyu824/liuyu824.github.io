@@ -65,10 +65,11 @@
 }
 .formerStuTable{
     border: 2px solid #2c2f3f;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-color:  #9abdeb;
 }
 .formerStuTable tr{
     border: 2px solid #2c2f3f;
