@@ -687,11 +687,10 @@ section {
 }
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 0 15px 15px 15px;
   padding: 20px;
   background: #fff;
   position: relative;
-  margin-bottom: 35px;
+  margin: 0 15px 35px;
   border-radius: 6px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -952,6 +951,6 @@ section {
   #footer {
     position: static;
     width: auto;
-    padding-right: 20px 15px;
+    padding-right: 20px;
   }
 }
