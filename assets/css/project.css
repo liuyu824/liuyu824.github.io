@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 2px solid #2c2f3f;
+    /*border: 2px solid #2c2f3f;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -10,10 +10,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 400px;
-    border: 2px solid #2c2f3f;
+    border: 1px solid #b4b6b8;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f2f2f2;
+    margin-bottom: 9px;
+    border-radius:1%;
+    filter: alpha(Opacity=100);
+    opacity: 1;
 }
+
+.projects:hover{
+    border: 2px solid #6c757d;
+    filter: alpha(Opacity=60);
+    opacity: 0.6;
+}
+
 .project{
     /*border: 2px solid #2c2f3f;*/
     text-align:center;
@@ -23,9 +35,12 @@
 }
 .projectImgName{
     width: 20%;
+    margin-right: 3px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .projectIntrotext{
-    width:80%;
+    width:75%;
     margin-left:auto;
     margin-right:auto;
     text-align: center;
@@ -38,5 +53,5 @@
 }
 .projectIntro{
     font-style: italic;
-    text-align: left;
+    text-align: justify;
 }
