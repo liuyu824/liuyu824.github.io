@@ -53,5 +53,10 @@
 }
 .projectIntro{
     font-style: italic;
-    text-align: justify;
+    text-align: left;
+}
+.projectIntro a{
+    color:#e87722;
+    font-weight: bold;
+    text-align: left;
 }
