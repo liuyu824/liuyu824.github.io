@@ -63,3 +63,16 @@
     font-style: italic;
     color:#6c757d;
 }
+.formerStuTable{
+    border: 2px solid #2c2f3f;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formerStuTable tr{
+    border: 2px solid #2c2f3f;
+}
+.formerStuTable td{
+    border: 2px solid #2c2f3f;
+}
