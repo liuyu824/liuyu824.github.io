@@ -1,0 +1,31 @@
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid #2c2f3f;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    border: 2px solid #2c2f3f;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project{
+    /*border: 2px solid #2c2f3f;*/
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+}
+.projectImgName{
+    width: 20%;
+}
+.projectIntrotext{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
