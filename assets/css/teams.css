@@ -54,6 +54,23 @@
     border-radius:100%;
     overflow:hidden;
 }
+.phd_student_img img{
+    width: 150px;
+    height:150px;
+    margin: 30px 50px 20px;
+    border-radius:100%;
+    overflow:hidden;
+    filter: alpha(Opacity=100);
+    opacity: 1;
+}
+.phd_student_img{
+
+}
+.phd_student_img:hover{
+    background-color: #9abdeb;
+    filter: alpha(Opacity=60);
+    opacity: 0.6;
+}
 .italic{
     font-size:15px;
     font-style: italic;

@@ -26,33 +26,320 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/index.css" rel="stylesheet">
 
+    <style>
+
+        @media (min-width: 992px) {
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                float:left
+            }
+
+            .col-md-12 {
+                width:100%
+            }
+
+            .col-md-11 {
+                width:91.66666667%
+            }
+
+            .col-md-10 {
+                width:83.33333333%
+            }
+
+            .col-md-9 {
+                width:75%
+            }
+
+            .col-md-8 {
+                width:66.66666667%
+            }
+
+            .col-md-7 {
+                width:58.33333333%
+            }
+
+            .col-md-6 {
+                width:50%
+            }
+
+            .col-md-5 {
+                width:41.66666667%
+            }
+
+            .col-md-4 {
+                width:33.33333333%
+            }
+
+            .col-md-3 {
+                width:25%
+            }
+
+            .col-md-2 {
+                width:16.66666667%
+            }
+
+            .col-md-1 {
+                width:8.33333333%
+            }
+
+            .col-md-pull-12 {
+                right:100%
+            }
+
+            .col-md-pull-11 {
+                right:91.66666667%
+            }
+
+            .col-md-pull-10 {
+                right:83.33333333%
+            }
+
+            .col-md-pull-9 {
+                right:75%
+            }
+
+            .col-md-pull-8 {
+                right:66.66666667%
+            }
+
+            .col-md-pull-7 {
+                right:58.33333333%
+            }
+
+            .col-md-pull-6 {
+                right:50%
+            }
+
+            .col-md-pull-5 {
+                right:41.66666667%
+            }
+
+            .col-md-pull-4 {
+                right:33.33333333%
+            }
+
+            .col-md-pull-3 {
+                right:25%
+            }
+
+            .col-md-pull-2 {
+                right:16.66666667%
+            }
+
+            .col-md-pull-1 {
+                right:8.33333333%
+            }
+
+            .col-md-pull-0 {
+                right:auto
+            }
+
+            .col-md-push-12 {
+                left:100%
+            }
+
+            .col-md-push-11 {
+                left:91.66666667%
+            }
+
+            .col-md-push-10 {
+                left:83.33333333%
+            }
+
+            .col-md-push-9 {
+                left:75%
+            }
+
+            .col-md-push-8 {
+                left:66.66666667%
+            }
+
+            .col-md-push-7 {
+                left:58.33333333%
+            }
+
+            .col-md-push-6 {
+                left:50%
+            }
+
+            .col-md-push-5 {
+                left:41.66666667%
+            }
+
+            .col-md-push-4 {
+                left:33.33333333%
+            }
+
+            .col-md-push-3 {
+                left:25%
+            }
+
+            .col-md-push-2 {
+                left:16.66666667%
+            }
+
+            .col-md-push-1 {
+                left:8.33333333%
+            }
+
+            .col-md-push-0 {
+                left:auto
+            }
+
+            .col-md-offset-12 {
+                margin-left:100%
+            }
+
+            .col-md-offset-11 {
+                margin-left:91.66666667%
+            }
+
+            .col-md-offset-10 {
+                margin-left:83.33333333%
+            }
+
+            .col-md-offset-9 {
+                margin-left:75%
+            }
+
+            .col-md-offset-8 {
+                margin-left:66.66666667%
+            }
+
+            .col-md-offset-7 {
+                margin-left:58.33333333%
+            }
+
+            .col-md-offset-6 {
+                margin-left:50%
+            }
+
+            .col-md-offset-5 {
+                margin-left:41.66666667%
+            }
+
+            .col-md-offset-4 {
+                margin-left:33.33333333%
+            }
+
+            .col-md-offset-3 {
+                margin-left:25%
+            }
+
+            .col-md-offset-2 {
+                margin-left:16.66666667%
+            }
+
+            .col-md-offset-1 {
+                margin-left:8.33333333%
+            }
+
+            .col-md-offset-0 {
+                margin-left:0%
+            }
+        }
+
+
+        a, a:hover, a:focus, a:active, a.active {
+            outline: 0;
+        }
+
+        a {
+            color: #e87722;
+        }
+
+        /* removed #portfolio from the beginning of most of these..*/
+        .portfolio-item {
+            right: 0;
+            margin: 0 0 15px;
+        }
+
+        .portfolio-item .portfolio-link {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+        .portfolio-item .portfolio-link .portfolio-hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -webkit-transition: all ease .5s;
+            -moz-transition: all ease .5s;
+            transition: all ease .5s;
+            /* Fallback when no plugin support */
+            background: rgba(232, 119, 34, .9);
+        }
+
+        .portfolio-item .portfolio-link .portfolio-hover:hover {
+            opacity: 1;
+        }
+
+        .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 20px;
+            margin-top: -12px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+            margin-top: -12px;
+        }
+
+        .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3, .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+            margin: 0;
+        }
+
+        .portfolio-item .portfolio-caption {
+            margin: 0 auto;
+            padding: 25px;
+            max-width: 400px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .portfolio-item .portfolio-caption h4 {
+            margin: 0;
+            text-transform: none;
+        }
+
+        .portfolio-item .portfolio-caption p {
+            margin: 0;
+            font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        * {
+            z-index: 2;
+        }
+    </style>
+
 </head>
 <body>
-<div class="section light-bg" id="gallery">
-    <div class="container">
-        <div class="section-title">
-            <small>GALLERY</small>
-            <h3>App Screenshots</h3>
-        </div>
-
-        <div class="img-gallery owl-carousel owl-theme">
-            <img src="assets/img/program-analysis.png" alt="image">
-            <img src="assets/img/program-analysis.png" alt="image">
-            <img src="assets/img/program-analysis.png" alt="image">
-            <img src="assets/img/program-analysis.png" alt="image">
-        </div>
-
+    <div class="col-md-3 col-sm-3 portfolio-item">
+        <a href="https://www.baidu.com" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content img-circle">
+                    <i class="fa fa-plus fa-3x"></i>
+                </div>
+            </div>
+            <img src="assets/img/Professor_Yulei_Sui_Photo_center.jpg" class="img-circle img-responsive" alt="">
+        </a>
     </div>
 
-</div>
-
-<!-- jQuery and Bootstrap -->
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<!-- Plugins JS -->
-<script src="assets/js/owl.carousel.min.js"></script>
-<!-- Custom JS -->
-<script src="assets/js/script.js"></script>
+    <!-- jQuery and Bootstrap -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
