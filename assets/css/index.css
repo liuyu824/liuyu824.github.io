@@ -269,6 +269,7 @@
     font-size: 30px;
     font-weight: bold;
 }
+
 .professorContainer{
     display: flex;
     flex-wrap: wrap;
@@ -353,3 +354,4 @@
 .formerStuName{
     text-align: left;
 }
+

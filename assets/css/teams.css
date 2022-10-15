@@ -1,84 +1,84 @@
-/*.professorContainer{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-/*.profImgName{*/
-/*    width:250px;*/
-/*    text-align:center;*/
-/*    margin-left:auto;*/
-/*    margin-right:auto;*/
-/*    align-items: center;*/
-/*}*/
-/*.profImgName img{*/
-/*    height: 170px;*/
-/*    width: 170px;*/
-/*    border-radius:100%;*/
-/*}*/
-/*.profIntrotext{*/
-/*    width:1000px;*/
-/*    margin-left:auto;*/
-/*    margin-right:auto;*/
-/*}*/
-/*.profIntrotext p{*/
-/*    text-align: justify;*/
-/*}*/
-/*.section-title span{*/
-/*    color:#0dcaf0;*/
-/*    font-size:30px;*/
-/*    font-weight: bold;*/
-/*}*/
-/*.studentContainer{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap*/
-/*}*/
-/*.overallContainer{*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*    !*border: 2px solid #2c2f3f;*!*/
-/*}*/
-/*.phdContainer{*/
-/*    !*border: 2px solid #2c2f3f;*!*/
-/*    width:80%;*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*}*/
-/*.phd_student{*/
-/*    margin-left:auto;*/
-/*    margin-right:auto;*/
-/*    margin-bottom: 50px;*/
-/*    float:left;*/
-/*    !*border: 2px solid #2c2f3f;*!*/
-/*}*/
-/*.phd_student img{*/
-/*    width: 150px;*/
-/*    height:150px;*/
-/*    margin: 30px 50px 20px;*/
-/*    border-radius:100%;*/
-/*    overflow:hidden;*/
-/*}*/
-/*.italic{*/
-/*    font-size:15px;*/
-/*    font-style: italic;*/
-/*    color:#6c757d;*/
-/*}*/
-/*.formerStuTable{*/
-/*    border: 2px solid #6c757d;*/
-/*    width: 90%;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    text-align: center;*/
-/*    background-color:  #9abdeb;*/
-/*}*/
-/*.formerStuTable tr{*/
-/*    border: 2px solid #6c757d;*/
-/*}*/
-/*.formerStuTable tr td{*/
-/*    border: 2px solid #6c757d;*/
-/*    width: 25%;*/
-/*    word-wrap: break-word;*/
-/*}*/
-/*.formerStuName{*/
-/*    text-align: left;*/
-/*}*/
+.professorContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profImgName{
+    width:250px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+}
+.profImgName img{
+    height: 170px;
+    width: 170px;
+    border-radius:100%;
+}
+.profIntrotext{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.profIntrotext p{
+    text-align: justify;
+}
+.section-title span{
+    color:#0dcaf0;
+    font-size:30px;
+    font-weight: bold;
+}
+.studentContainer{
+    display: flex;
+    flex-wrap: wrap
+}
+.overallContainer{
+    width: 100%;
+    text-align: center;
+    /*border: 2px solid #2c2f3f;*/
+}
+.phdContainer{
+    /*border: 2px solid #2c2f3f;*/
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.phd_student{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    float:left;
+    /*border: 2px solid #2c2f3f;*/
+}
+.phd_student img{
+    width: 150px;
+    height:150px;
+    margin: 30px 50px 20px;
+    border-radius:100%;
+    overflow:hidden;
+}
+.italic{
+    font-size:15px;
+    font-style: italic;
+    color:#6c757d;
+}
+.formerStuTable{
+    border: 2px solid #6c757d;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:  #9abdeb;
+}
+.formerStuTable tr{
+    border: 2px solid #6c757d;
+}
+.formerStuTable tr td{
+    border: 2px solid #6c757d;
+    width: 25%;
+    word-wrap: break-word;
+}
+.formerStuName{
+    text-align: left;
+}
