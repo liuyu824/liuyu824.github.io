@@ -1,14 +1,17 @@
 .professorContainer{
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 .profImgName{
     width:250px;
     text-align:center;
     margin-left:auto;
     margin-right:auto;
+    align-items: center;
 }
 .profImgName img{
+    height: 170px;
+    width: 170px;
     border-radius:100%;
 }
 .profIntrotext{
@@ -44,7 +47,7 @@
 .phd_student{
     margin-left:auto;
     margin-right:auto;
-    margin-top: 50px;
+    margin-bottom: 50px;
     float:left;
     /*border: 2px solid #2c2f3f;*/
 }
