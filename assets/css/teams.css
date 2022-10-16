@@ -76,13 +76,19 @@
     font-style: italic;
     color:#6c757d;
 }
+.linkProfessor{
+    font-size:17px;
+    font-style: italic;
+    font-weight: bold;
+    color:#e87722;
+}
 .formerStuTable{
     border: 2px solid #6c757d;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color:  #9abdeb;
+    background-color: #b8daff;
 }
 .formerStuTable tr{
     border: 2px solid #6c757d;
@@ -94,4 +100,12 @@
 }
 .formerStuName{
     text-align: left;
+}
+.studentsIntro{
+    color: #6c757d;
+    margin-bottom: 40px;
+    width:100%;
+    /*border: 2px solid #2c2f3f;*/
+    text-align: left;
+    font-style: italic;
 }
