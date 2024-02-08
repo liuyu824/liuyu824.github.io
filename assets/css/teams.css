@@ -1,0 +1,111 @@
+.professorContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profImgName{
+    width:250px;
+    text-align:center;
+    margin: auto;
+    align-items: center;
+}
+.profImgName img{
+    height: 170px;
+    width: 170px;
+    border-radius:100%;
+}
+.profIntroductionText{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.profIntroductionText p{
+    text-align: justify;
+}
+.section-title span{
+    color:#0dcaf0;
+    font-size:30px;
+    font-weight: bold;
+}
+.studentContainer{
+    display: flex;
+    flex-wrap: wrap
+}
+.overallContainer{
+    width: 100%;
+    text-align: center;
+}
+.phdContainer{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.phd_student{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    float:left;
+}
+.phd_student img{
+    width: 150px;
+    height:150px;
+    margin: 30px 50px 20px;
+    border-radius:100%;
+    overflow:hidden;
+}
+.phd_student_img img{
+    width: 150px;
+    height:150px;
+    margin: 30px 50px 20px;
+    border-radius:100%;
+    overflow:hidden;
+    filter: alpha(Opacity=100);
+    opacity: 1;
+}
+.phd_student_img{
+
+}
+.phd_student_img:hover{
+    background-color: #9abdeb;
+    filter: alpha(Opacity=60);
+    opacity: 0.6;
+}
+.italic{
+    font-size:15px;
+    font-style: italic;
+    color:#6c757d;
+}
+.linkProfessor{
+    font-size:17px;
+    font-style: italic;
+    font-weight: bold;
+    color:#e87722;
+}
+.formerStuTable{
+    border: 2px solid #6c757d;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #b8daff;
+}
+.formerStuTable tr{
+    border: 2px solid #6c757d;
+}
+.formerStuTable tr td{
+    border: 2px solid #6c757d;
+    width: 25%;
+    word-wrap: break-word;
+}
+.formerStuName{
+    text-align: left;
+}
+.studentsIntro{
+    color: #6c757d;
+    margin-bottom: 40px;
+    width:100%;
+    /*border: 2px solid #2c2f3f;*/
+    text-align: left;
+    font-style: italic;
+}
