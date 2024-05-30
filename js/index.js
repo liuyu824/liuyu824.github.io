@@ -22,8 +22,8 @@ $(function(){
     createCode();
 });
 
-function handleInput(event){
-    const inputValue = event.target.value;
+function handleInput(){
+    const inputValue = document.getElementById("userName").value;
     console.log("Input value change to: "+ inputValue)
     if (inputValue === "黄殿辉"){
         document.getElementById("userDepartment").value = "数字化云平台部";
