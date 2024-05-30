@@ -44,13 +44,12 @@ function handleInput(){
 }
 
 function index(btn){
-    var user = $(".userPhone").val();
-    var pass = $(".userPass").val();
-    var data='{"userNum":"'+user+'","password":"'+pass+'"}';
-    sessionStorage.setItem("userNum",JSON.stringify(user));
+    const userName = document.getElementById("userName").value;
+    const userOffice = document.getElementById("userOffice").value;
+    const userDepartment = document.getElementById("userDepartment").value;
+    const data='{"userName":"'+userName+'","userOffice":"'+userOffice+'","userDepartment":"'+userDepartment+'"}';
 
-    self.location.href="html/test.html";
-    sessionStorage.setItem("userNum",JSON.stringify(user));
+    sessionStorage.setItem("userData",JSON.stringify(data));
 
     // $.ajax({
     //     type: 'GET',
