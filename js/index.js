@@ -37,7 +37,8 @@ function handleInput(){
     } else {
         document.getElementById("userDepartment").value = "";
         document.getElementById("userDepartment").readOnly = false;
-        document.getElementById("div_userOffice").value = "";
+        document.getElementById("userOffice").value = "";
+        document.getElementById("userOffice").readOnly = false;
         document.getElementById("div_userOffice").hidden = false;
     }
 }
