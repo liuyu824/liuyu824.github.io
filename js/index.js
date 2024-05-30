@@ -1,5 +1,5 @@
 /**
- * Created by kangli on 2018/3/9.
+ * Created by LiuYu824
  */
 $(window).resize(function(){
     height_width();
@@ -21,13 +21,13 @@ $(function(){
     form_height();
     createCode();
 });
-function login(btn){
+function index(btn){
     var user = $(".userPhone").val();
 
     var pass = $(".userPass").val();
     var data='{"userNum":"'+user+'","password":"'+pass+'"}';
 
-    self.location.href="index.html";
+    self.location.href="function.html";
     sessionStorage.setItem("userNum",JSON.stringify(user));
 
     // if(userLimit(user)==true&&passLimit(pass)==true){
