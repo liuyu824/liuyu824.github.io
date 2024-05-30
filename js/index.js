@@ -34,6 +34,11 @@ function handleInput(){
         document.getElementById("userDepartment").readOnly = true;
         document.getElementById("userOffice").value = "网联平台系统开发科";
         document.getElementById("userOffice").readOnly = true;
+    } else {
+        document.getElementById("userDepartment").value = "";
+        document.getElementById("userDepartment").readOnly = false;
+        document.getElementById("div_userOffice").value = "";
+        document.getElementById("div_userOffice").hidden = false;
     }
 }
 
