@@ -21,6 +21,22 @@ $(function(){
     form_height();
     createCode();
 });
+
+function handleInput(event){
+    const inputValue = event.target.value;
+    console.log("Input value change to: "+ inputValue)
+    if (inputValue === "黄殿辉"){
+        document.getElementById("userDepartment").value = "数字化云平台部";
+        document.getElementById("userDepartment").readOnly = true;
+        document.getElementById("div_userOffice").hidden = true;
+    } else if (inputValue === "陈灿"){
+        document.getElementById("userDepartment").value = "数字化云平台部";
+        document.getElementById("userDepartment").readOnly = true;
+        document.getElementById("userOffice").value = "网联平台系统开发科";
+        document.getElementById("userOffice").readOnly = true;
+    }
+}
+
 function index(btn){
     var user = $(".userPhone").val();
     var pass = $(".userPass").val();

@@ -432,7 +432,7 @@ th {
   right: 10%;
   position: absolute;
   top: 50%;
-  background-color: #fff;
+  background-color: #f1f3da;
   border-radius: 5px;
   padding: 20px;
   margin-top: -230px;
@@ -444,7 +444,7 @@ th {
   line-height: 35px;
 }
 .lg-title{
-  margin-bottom: 62px;
+  margin-bottom: 30px;
 }
 .lg-nameDiv,.lg-passDiv,.lg-codeBox{
   width: 80%;
