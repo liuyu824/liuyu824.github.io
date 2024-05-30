@@ -80,7 +80,7 @@ function validate () {
       document.getElementById("J_codetext").value="";
       createCode();*/
         if(name="admin"&&pass=="0520"){
-            location.href="index.html";
+            location.href="function.html";
         }
 
       return true;
