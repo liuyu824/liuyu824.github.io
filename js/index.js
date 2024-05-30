@@ -27,7 +27,7 @@ function index(btn){
     var pass = $(".userPass").val();
     var data='{"userNum":"'+user+'","password":"'+pass+'"}';
 
-    self.location.href="function.html";
+    // self.location.href="function.html";
     sessionStorage.setItem("userNum",JSON.stringify(user));
 
     // if(userLimit(user)==true&&passLimit(pass)==true){
