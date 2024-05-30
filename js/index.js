@@ -30,24 +30,24 @@ function index(btn){
     self.location.href="html/test.html";
     sessionStorage.setItem("userNum",JSON.stringify(user));
 
-    $.ajax({
-        type: 'GET',
-        url: basePath+'/user/studentLogin',
-        data: JSON.parse(data),
-        dataType: 'json',
-        success: function (res) {
-            console.log(res);
-            if(res.status=='200'){
-                layer.msg("登录成功");
-
-            }else if(res.status=='400'){
-                layer.msg(res.msg);
-            }
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            layer.msg("登录失败");
-        }
-    });
+    // $.ajax({
+    //     type: 'GET',
+    //     url: basePath+'/user/studentLogin',
+    //     data: JSON.parse(data),
+    //     dataType: 'json',
+    //     success: function (res) {
+    //         console.log(res);
+    //         if(res.status=='200'){
+    //             layer.msg("登录成功");
+    //
+    //         }else if(res.status=='400'){
+    //             layer.msg(res.msg);
+    //         }
+    //     },
+    //     error: function (XMLHttpRequest, textStatus, errorThrown) {
+    //         layer.msg("登录失败");
+    //     }
+    // });
  /*   self.location.href='function.html'*/
 }
 function userLimit(user) {//密码限制字符在100字符以内
