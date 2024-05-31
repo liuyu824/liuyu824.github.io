@@ -10,11 +10,17 @@ function parseFromUrl(){
     const userJobID = params.get('userJobID');
     const userOffice = params.get('userOffice');
     const userDepartment = params.get('userDepartment');
+    const userEmail = params.get('userEmail');
 
-    console.log(userName + userJobID + userOffice + userDepartment);
-
+    console.log(userName + userJobID + userOffice + userDepartment + userEmail);
+    if (userOffice === ""){
+        document.getElementById("div_userOffice").hidden = true;
+    } else {
+        document.getElementById("div_userOffice").hidden = false;
+        document.getElementById("userOffice").innerHTML = userOffice;
+    }
     document.getElementById("userName").innerHTML = userName;
     document.getElementById("userJobID").innerHTML = userJobID;
-    document.getElementById("userOffice").innerHTML = userOffice;
     document.getElementById("userDepartment").innerHTML = userDepartment;
+    document.getElementById("userEmail").innerHTML = userEmail;
 }

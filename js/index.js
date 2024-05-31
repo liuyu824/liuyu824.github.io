@@ -25,8 +25,8 @@ $(function(){
 function handleInput(){
 
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':''},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科'},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn'},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn'},
         {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科'},
     ];
 
@@ -62,8 +62,8 @@ function handleInput(){
 
 function index(btn){
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':''},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科'},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn'},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn'},
         {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科'},
     ];
 
