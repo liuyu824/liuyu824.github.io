@@ -11,7 +11,12 @@
     <script src="../base/layer-v3.1.1/layer/layer.js"></script>
     <script src="../js/paging.js"></script>
     <script src="../js/template.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/function.js"></script>
+    <script>
+      window.onload = function (){
+        parseFromUrl();
+      }
+    </script>
     <title>首页</title>
   </head>
 
@@ -44,52 +49,55 @@
           <div class="col-xs-4">
             <div class="border">
               <div class="BoxTitle">
-                学员信息
+                员工信息
               </div>
               <div class="Boxcontent text-center">
                 <img src="../img/sysImg.png" alt="" class="img-rounded">
                 <p class="headName"></p>
+
                 <div class="row" style="padding:10px 30px;">
                   <div class="text-right col-xs-5">
-                    学号：
+                    员工姓名：
                   </div>
-                  <div class="text-left col-xs-7 in-userNum">
+                  <div id="userName" class="text-left col-xs-7 in-userNum">
+                    <!-- 1422110120-->
+                  </div>
+                </div>
+
+                <div class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    员工工号：
+                  </div>
+                  <div id="userJobID" class="text-left col-xs-7 in-userNum">
                    <!-- 1422110120-->
                   </div>
                 </div>
+
                 <div class="row" style="padding:10px 30px;">
                   <div class="text-right col-xs-5">
-                    所属学院：
+                    所在科室：
                   </div>
-                  <div class="text-left col-xs-7 in-collage">
+                  <div id="userOffice" class="text-left col-xs-7 in-collage">
+                  </div>
+                </div>
+
+                <div class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    所属部门：
+                  </div>
+                  <div id="userDepartment" class="text-left col-xs-7 in-collage">
                     <!--计算机学院-->
                   </div>
                 </div>
+
                 <div class="row" style="padding:10px 30px;">
-                  <div class="text-right col-xs-5">
-                    身份证号码：
-                  </div>
-                  <div class="text-left col-xs-7 in-idcard">
-                  <!-- 330424199908109999-->
-                  </div>
-                </div>
-                <div class="row" style="padding:10px 30px;">
-                  <div class="text-right col-xs-5">
-                    邮箱：
+                  <div id="userEmail" class="text-right col-xs-5">
+                    员工邮箱：
                   </div>
                   <div class="text-left col-xs-7 in-email">
                   <!--  163@163.com-->
                   </div>
                 </div>
-                <div class="row" style="padding:10px 30px;">
-                  <div class="text-right col-xs-5">
-                    状态：
-                  </div>
-                  <div class="text-left col-xs-7 in-statu">
-                    <!--注册会员-->
-                  </div>
-                </div>
-                <button type="button" class="btn btn-default" onclick="editStudentInfo(this)">编辑</button>
               </div>
             </div>
           </div>
@@ -101,65 +109,18 @@
               </div>
               <div class="Boxcontent boxcontent2" style="padding:15px">
                 <ul class="noticeBody" style="height: 203px;">
-               <!--   <li class="clearfix">
-                    <a href="announceDetail.html">
+                  <li class="clearfix">
+                    <a href="">
                       <div class="pull-left">
-                        2014年05月30日网上党校考试安排（下沙校区）
+                        2024年05月31日网上党校考试安排（数字化云平台部）
                       </div>
                       <div class="pull-right">
-                        [2014-05-27]
+                        [2024-05-30]
                       </div>
                     </a>
 
                   </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="pull-left">
-                      2014年05月30日网上党校考试安排（下沙校区）
-                    </div>
-                    <div class="pull-right">
-                      [2014-05-27]
-                    </div>
-                  </li>-->
+
 
                 </ul>
                 <div class="page-footer" style="height: 30px">
@@ -168,133 +129,8 @@
             </div>
                 </div>
               </div>
-
-            <div class="in-testDiv">
-              <a href="javascript:;"><span class="in-testbtn in-selfTest" data-type="0" onclick="selfTest(this)" >自测</span></a>
-              <a href="javascript:;"><span class="in-testbtn in-test" data-type="1" onclick="selfTest(this)">考试</span></a>
-              <p>(注：只有自测超过<span class="scoreLine"><!--70--></span>分方可报名，报名截止时间为考试开始前2天，请各位同学注意报名时间！)</p>
-            </div>
           </div>
         </div>
-
-        <div class="row clearfix">
-          <div class="col-xs-4">
-            <!-- 自测记录-->
-            <div class="border borderTop">
-              <div class="BoxTitle">
-                自测记录
-              </div>
-              <div class="g-tableDiv">
-                <table class="table selfTable">
-                  <thead>
-                  <tr>
-                    <th>自测时间</th>
-                    <th class="texC">自测成绩</th>
-                    <th>详情</th>
-                  </tr>
-                  </thead>
-                  <tbody class="selfTestBody">
-               <!--   <tr>
-                    <td>2018年7月13日</td>
-                    <td>70</td>
-                    <td ><a href="testAnaly.html" class="colorBlue">查看详情</a></td>
-                  </tr>
-                  <tr>
-                    <td>2018年7月13日</td>
-                    <td>70</td>
-                    <td ><a href="testAnaly.html" class="colorBlue">查看详情</a></td>
-                  </tr>
-                  <tr>
-                    <td>2018年7月13日</td>
-                    <td>70</td>
-                    <td ><a href="testAnaly.html" class="colorBlue">查看详情</a></td>
-                  </tr>
-                  <tr>
-                    <td>2018年7月13日</td>
-                    <td>70</td>
-                    <td ><a href="testAnaly.html" class="colorBlue">查看详情</a></td>
-                  </tr>-->
-                  </tbody>
-                </table>
-                <div class="page-footer" style="">
-                  <div id="selfpage" class="page_div">
-                    <!--  <a id="firstPage">首页</a>-->
-               <!--     <a id="prePage">&laquo;</a>
-                    <a class="current">1</a>
-                    <a>2</a>
-                    <a>3</a>
-                    <a id="nextPage">&raquo;</a>
-                    &lt;!&ndash;    <a id="lastPage">尾页</a>&ndash;&gt;
-                    <span class="totalPages"> 共<span>3</span>页 </span>
-                    <span class="totalSize"> 共<span>20</span>条记录 </span>-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-8">
-            <!-- 考试信息-->
-            <div class="border borderTop">
-              <div class="BoxTitle">
-                考试信息
-              </div>
-              <div class="g-tableDiv">
-                <table class="table infotable">
-                  <thead>
-                  <tr>
-                    <th>编号</th>
-                    <th>考试开始时间</th>
-                    <th>报名截止时间</th>
-                    <th>考试状态</th>
-                    <th>考试成绩</th>
-                    <th>操作</th>
-                  </tr>
-                  </thead>
-                  <tbody class="infobody">
-                  <!--<tr>
-                    <td>1</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>考试中</td>
-                    <td>70</td>
-                    <td ><a href="" class="colorBlue">查看详情</a></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>已报名</td>
-                    <td>70</td>
-                    <td ><a href="" class="">已报名</a></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>未报名</td>
-                    <td>70</td>
-                    <td ><a href="" class="colorBlue">报名</a></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>2018年1月23日13:30:53</td>
-                    <td>已结束</td>
-                    <td>70</td>
-                    <td ><a href="" class="colorBlue">查看详情</a></td>
-                  </tr>-->
-                  </tbody>
-                </table>
-                <div class="page-footer" style="">
-                  <div id="Infopage" class="page_div">
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </body>
