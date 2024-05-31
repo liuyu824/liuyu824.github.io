@@ -2,10 +2,10 @@ function parseFromUrl(){
     // 获取当前页面的URL
     const url = window.location.href;
 
-// 使用URLSearchParams解析查询参数
+    // 使用URLSearchParams解析查询参数
     const params = new URLSearchParams(url.split('?')[1]);
 
-// 获取特定的查询参数
+    // 获取特定的查询参数
     const userName = params.get('userName');
     const userJobID = params.get('userJobID');
     const userOffice = params.get('userOffice');
@@ -23,4 +23,9 @@ function parseFromUrl(){
     document.getElementById("userJobID").innerHTML = userJobID;
     document.getElementById("userDepartment").innerHTML = userDepartment;
     document.getElementById("userEmail").innerHTML = userEmail;
+}
+
+// Html5页面携带参数跳转
+function redirectWithParams(url,params){
+    window.location.href = url;
 }
