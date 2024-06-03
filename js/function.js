@@ -24,8 +24,3 @@ function parseFromUrl(){
     document.getElementById("userDepartment").innerHTML = userDepartment;
     document.getElementById("userEmail").innerHTML = userEmail;
 }
-
-// Html5页面携带参数跳转
-function redirectWithParams(url,params){
-    window.location.href = url;
-}
