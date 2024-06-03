@@ -25,9 +25,9 @@ $(function(){
 function handleInput(){
 
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn'},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn'},
-        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科'},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
     ];
 
     const inputValue = document.getElementById("userName").value;
@@ -62,9 +62,9 @@ function handleInput(){
 
 function index(btn){
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','finalGrade':''},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','finalGrade':''},
-        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','finalGrade':''},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
     ];
 
     const userName = document.getElementById("userName").value;
@@ -90,12 +90,12 @@ function index(btn){
 }
 
 // 携带参数跳转
-function redirectWithParams(page, params) {
+function redirectWithParams(page, userParams) {
     // 检查params是否是一个对象
-    if (typeof params === 'object') {
+    if (typeof userParams === 'object') {
         // 将对象转换为查询字符串
-        const queryString = Object.keys(params)
-            .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(params[key]))
+        const queryString = Object.keys(userParams)
+            .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(userParams[key]))
             .join('&');
         // 将查询字符串添加到URL中
         window.location.href = page + '?' + queryString;
@@ -103,4 +103,35 @@ function redirectWithParams(page, params) {
         // 如果params不是对象，直接跳转到页面
         window.location.href = page;
     }
+}
+
+// 格式化日对象
+function getNowDate (){
+    let date = new Date();
+    let sign2 = ":";
+    let year = date.getFullYear() // 年
+    let month = date.getMonth() + 1; // 月
+    let day = date.getDate(); // 日
+    let hour = date.getHours(); // 时
+    let minutes = date.getMinutes(); // 分
+    let seconds = date.getSeconds() //秒
+    let weekArr = ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期天'];
+    let week = weekArr[date.getDay()];
+    // 给一位数的数据前面加 “0”
+    if (month >= 1 && month <= 9) {
+        month = "0" + month;
+    }
+    if (day >= 0 && day <= 9) {
+        day = "0" + day;
+    }
+    if (hour >= 0 && hour <= 9) {
+        hour = "0" + hour;
+    }
+    if (minutes >= 0 && minutes <= 9) {
+        minutes = "0" + minutes;
+    }
+    if (seconds >= 0 && seconds <= 9) {
+        seconds = "0" + seconds;
+    }
+    return year + "-" + month + "-" + day + " " + hour + sign2 + minutes + sign2 + seconds;
 }

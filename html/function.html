@@ -12,20 +12,12 @@
     <script src="../js/paging.js"></script>
     <script src="../js/template.js"></script>
     <script src="../js/function.js"></script>
-    <script>
-      window.onload = function (){
-        parseFromUrl();
-      }
-    </script>
     <title>首页</title>
   </head>
 
   <body>
     <div class="Box">
       <div class="TopBar fontYahei">
-        <div class="imgBox">
-          <img src="../img/u4296.png" alt="">
-        </div>
         <div class="TopNav clearfix">
           <ul class="clearfix Nav pull-left">
             <li><a href="function.html">网站首页</a></li>
@@ -33,8 +25,6 @@
             <!-- <div class="clearfix"></div> -->
           </ul>
           <div class="pull-right">
-<!--            <img src="../img/u4278.png" alt="">-->
-<!--            <a href="testHelp.html"><span>帮助</span></a>-->
             <a href="../index.html"><span>注销</span></a>
           </div>
         </div>
@@ -52,7 +42,6 @@
                 员工信息
               </div>
               <div class="Boxcontent text-center">
-                <img src="../img/sysImg.png" alt="" class="img-rounded">
                 <p class="headName"></p>
 
                 <div class="row" style="padding:10px 30px;">
@@ -110,7 +99,7 @@
               <div class="Boxcontent boxcontent2" style="padding:15px">
                 <ul class="noticeBody" style="height: 203px;">
                   <li class="clearfix">
-                    <a href="announceTestDetail.html">
+                    <a onclick="redirect('announceTestDetail.html')">
                       <div class="pull-left">
                         2024年05月31日网上党校考试安排（数字化云平台部）
                       </div>
@@ -120,7 +109,7 @@
                     </a>
                   </li>
                   <li class="clearfix">
-                    <a href="announceNewsDetail.html">
+                    <a onclick="redirect('announceNewsDetail.html')">
                       <div class="pull-left">
                         2024年5月23日数字化云平台部党支部党纪学习教育主题党日活动
                       </div>

@@ -1,5 +1,7 @@
 function getRadioValue(){
 
+    let endTime = getNowDate();
+
     let finalGrade = 0;
 
     const answerList = [
@@ -49,7 +51,14 @@ function getRadioValue(){
     }
     document.getElementById('grade').innerHTML = finalGrade.toString();
 
-    redirectWithParams('achievement.html',);
+    // 获取当前页面的URL
+    const url = window.location.href;
+    // 使用URLSearchParams解析查询参数
+    const userParams = new URLSearchParams(url.split('?')[1]);
+
+    userParams.set('endTime', endTime);
+    userParams.set('finalGrade',finalGrade.toString());
+    redirectWithParams('achievement.html', userParams);
 }
 
 // 假设你的单选按钮有相同的name属性值，例如 "radioName"

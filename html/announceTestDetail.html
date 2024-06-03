@@ -9,15 +9,17 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../base/layer-v3.1.1/layer/layer.js"></script>
     <script src="../js/template.js"></script>
-    <script src="../js/announceDetail.js"></script>
+    <script src="../js/function.js"></script>
+    <script>
+        window.onload = function(){
+            parseFromUrl();
+        }
+    </script>
     <title>公告详情</title>
 </head>
 <body>
 <div class="Box">
     <div class="TopBar fontYahei">
-        <div class="imgBox">
-            <img src="../img/u4296.png" alt="">
-        </div>
         <div class="TopNav clearfix">
             <ul class="clearfix Nav pull-left">
                 <li><a href="function.html">网站首页</a></li>
@@ -40,7 +42,7 @@
             <div class="text-center ad-detailTime">发布时间：<span class="ad-noticeTime">2024-05-31 06:27:23</span>	</div>
             <div class="ad-detail">
                 <p>请于近日完成党校考试</p>
-                <a href="test.html">进入考试</a>
+                <a onclick="redirect('test.html')">进入考试</a>
             </div>
         </div>
     </div>
