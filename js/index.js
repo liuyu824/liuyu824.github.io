@@ -25,9 +25,31 @@ $(function(){
 function handleInput(){
 
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'黄殿辉','userJobID':'21238','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
     ];
 
     const inputValue = document.getElementById("userName").value;
