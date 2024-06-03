@@ -1,6 +1,16 @@
+window.onload = function(){
+    // 获取当前页面的URL
+    const url = window.location.href;
+    // 使用URLSearchParams解析查询参数
+    const userParams = new URLSearchParams(url.split('?')[1]);
+    // 填充页面信息
+    document.getElementById("userName").innerHTML = userParams.get("userName");
+    document.getElementById("userOffice").innerHTML = userParams.get("userOffice");
+}
+
 function getRadioValue(){
 
-    let endTime = getNowDate();
+    let finishTime = getNowDate();
 
     let finalGrade = 0;
 
@@ -56,7 +66,7 @@ function getRadioValue(){
     // 使用URLSearchParams解析查询参数
     const userParams = new URLSearchParams(url.split('?')[1]);
 
-    userParams.set('endTime', endTime);
+    userParams.set('finishTime', finishTime);
     userParams.set('finalGrade',finalGrade.toString());
     redirectWithParams('achievement.html', userParams);
 }

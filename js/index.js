@@ -25,9 +25,9 @@ $(function(){
 function handleInput(){
 
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
-        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
     ];
 
     const inputValue = document.getElementById("userName").value;
@@ -62,9 +62,9 @@ function handleInput(){
 
 function index(btn){
     const userList = [
-        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
-        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
-        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','endTime':'','finalGrade':''},
+        {'userName':'黄殿辉','userJobID':'0','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'陈灿','userJobID':'23627','userDepartment':'数字化云平台部','userOffice':'网联平台系统开发科','userEmail':'chencan@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
+        {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
     ];
 
     const userName = document.getElementById("userName").value;
@@ -89,10 +89,28 @@ function index(btn){
     }
 }
 
+function redirect(page){
+    // 获取当前页面的URL
+    const url = window.location.href;
+    // 使用URLSearchParams解析查询参数
+    const userParams = new URLSearchParams(url.split('?')[1]);
+    // 获取特定的查询参数
+    const userName = userParams.get('userName');
+    const userJobID = userParams.get('userJobID');
+    const userOffice = userParams.get('userOffice');
+    const userDepartment = userParams.get('userDepartment');
+    const userEmail = userParams.get('userEmail');
+
+
+
+    redirectWithParams(page,userParams)
+}
+
 // 携带参数跳转
 function redirectWithParams(page, userParams) {
     // 检查params是否是一个对象
     if (typeof userParams === 'object') {
+        console.log(userParams)
         // 将对象转换为查询字符串
         const queryString = Object.keys(userParams)
             .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(userParams[key]))

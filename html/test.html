@@ -10,6 +10,7 @@
     <script src="../base/layer-v3.1.1/layer/layer.js"></script>
     <script src="../js/paging.js"></script>
     <script src="../js/template.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/test.js"></script>
     <title></title>
 </head>
@@ -18,9 +19,8 @@
     <div class="TopBar fontYahei">
         <div class="TopNav clearfix">
             <ul class="clearfix Nav pull-left">
-                <li><a href="../index.html">网站首页</a></li>
-                <li><a href="achievement.html">考试成绩</a></li>
-                <!-- <div class="clearfix"></div> -->
+                <li><a onclick="redirect('function.html')">网站首页</a></li>
+                <li><a onclick="redirect('achievement.html')">考试成绩</a></li>
             </ul>
             <div class="pull-right">
                 <a href="testHelp.html"><span>帮助</span></a>
@@ -36,8 +36,8 @@
     <div class="centerBox container-fluid clearfix">
        <div class="ta-bigDiv">
            <div class="ta-studentInfo clearfix">
-               <p>姓名：<span class="ta-xuehao"><!--123456--></span></p>
-               <p>部门：<span class="colorRed ta-type"><!--考试练习--></span></p>
+               <p>姓名：<span class="ta-xuehao" id="userName"><!--123456--></span></p>
+               <p>科室：<span class="colorRed ta-type" id="userOffice"><!--考试练习--></span></p>
            </div>
 
            <form>
