@@ -119,7 +119,6 @@ function getNowDate (){
     let day = date.getDate(); // 日
     let hour = date.getHours(); // 时
     let minutes = date.getMinutes(); // 分
-    let seconds = date.getSeconds() //秒
     let weekArr = ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期天'];
     let week = weekArr[date.getDay()];
     // 给一位数的数据前面加 “0”
@@ -135,8 +134,5 @@ function getNowDate (){
     if (minutes >= 0 && minutes <= 9) {
         minutes = "0" + minutes;
     }
-    if (seconds >= 0 && seconds <= 9) {
-        seconds = "0" + seconds;
-    }
-    return year + "-" + month + "-" + day + " " + hour + sign2 + minutes + sign2 + seconds;
+    return year + "-" + month + "-" + day + " " + hour + sign2 + minutes;
 }
