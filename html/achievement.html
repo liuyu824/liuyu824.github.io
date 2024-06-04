@@ -20,13 +20,13 @@
             // 使用URLSearchParams解析查询参数
             const userParams = new URLSearchParams(url.split('?')[1]);
 
-            //'startTime':'','finishTime':'','finalGrade':''
-
             // 获取特定的查询参数
+            const userName = userParams.get('userName')
             const startTime = userParams.get('startTime');
             const finishTime = userParams.get('finishTime');
             const finalGrade = userParams.get('finalGrade');
 
+            document.getElementById('testUser').innerHTML = userName;
             document.getElementById('testName').innerHTML = "党校测试";
             document.getElementById('startTime').innerHTML = startTime;
             document.getElementById('finishTime').innerHTML = finishTime;
@@ -61,22 +61,27 @@
             <div class="g-tableDiv">
                 <table class="table achTable">
                     <thead>
-                    <tr>
-                        <th>考试名称</th>
-                        <th>开始时间</th>
-                        <th>结束时间</th>
-                        <th>当前状态</th>
-                        <th>考试成绩</th>
-                    </tr>
+                        <tr>
+                            <th>考试人员</th>
+                            <th>考试名称</th>
+                            <th>开始时间</th>
+                            <th>结束时间</th>
+                            <th>当前状态</th>
+                            <th>考试成绩</th>
+                            <th>执行操作</th>
+                        </tr>
                     </thead>
+
                     <tbody class="achTbody">
-                    <tr>
-                        <td id="testName"></td>
-                        <td id="startTime"></td>
-                        <td id="finishTime"></td>
-                        <td id="currentStatus"></td>
-                        <td id="finalGrade"></td>
-                    </tr>
+                        <tr>
+                            <td id="testUser"></td>
+                            <td id="testName"></td>
+                            <td id="startTime"></td>
+                            <td id="finishTime"></td>
+                            <td id="currentStatus"></td>
+                            <td id="finalGrade"></td>
+                            <td><button>重新考试</button></td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="page-footer" style="">

@@ -122,7 +122,6 @@ function index(btn){
         })[0]; // 筛选账号返回数组，不存在则返回空数组
 
     if (!account){
-        console.log()
     } else {
         redirectWithParams("html/function.html",account)
     }
@@ -133,15 +132,6 @@ function redirect(page){
     const url = window.location.href;
     // 使用URLSearchParams解析查询参数
     const userParams = new URLSearchParams(url.split('?')[1]);
-    // 获取特定的查询参数
-    const userName = userParams.get('userName');
-    const userJobID = userParams.get('userJobID');
-    const userOffice = userParams.get('userOffice');
-    const userDepartment = userParams.get('userDepartment');
-    const userEmail = userParams.get('userEmail');
-
-
-
     redirectWithParams(page,userParams)
 }
 
@@ -149,7 +139,6 @@ function redirect(page){
 function redirectWithParams(page, userParams) {
     // 检查params是否是一个对象
     if (typeof userParams === 'object') {
-        console.log(userParams)
         // 将对象转换为查询字符串
         const queryString = Object.keys(userParams)
             .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(userParams[key]))

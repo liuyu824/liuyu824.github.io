@@ -97,7 +97,6 @@ function i_back() {
     }
     else {
         history.go(-1);
-        console.log(1)
     }
 }//返回上一页
 function GetQueryString(name) {
