@@ -8,25 +8,7 @@
     <script src="../js/jquery-1.11.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../base/layer-v3.1.1/layer/layer.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/template.js"></script>
-    <script src="../js/function.js"></script>
-    <script>
-        window.onload = function(){
-            // 获取当前页面的URL
-            const url = window.location.href;
-
-            // 使用URLSearchParams解析查询参数
-            const userParams = new URLSearchParams(url.split('?')[1]);
-
-            // 获取特定的查询参数
-            const userName = userParams.get('userName');
-            const userJobID = userParams.get('userJobID');
-            const userOffice = userParams.get('userOffice');
-            const userDepartment = userParams.get('userDepartment');
-            const userEmail = userParams.get('userEmail');
-        }
-    </script>
+    <script src="../js/announceTestDetail.js"></script>
     <title>公告详情</title>
 </head>
 <body>

@@ -25,6 +25,7 @@ $(function(){
 function handleInput(){
 
     const userList = [
+        {'userName':'冯硕','userJobID':'','userDepartment':'智能网联中心','userOffice':'','userEmail':'fengshuo@baicgroup.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'黄殿辉','userJobID':'21238','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'肖倩文','userJobID':'18335','userDepartment':'数字化云平台部','userOffice':'大数据分析及应用开发科','userEmail':'xiaoqianwen@baicgroup.com.cn','startTime':'','finishTime':'','finalGrade':''},
@@ -122,7 +123,6 @@ function index(btn){
         })[0]; // 筛选账号返回数组，不存在则返回空数组
 
     if (!account){
-        console.log()
     } else {
         redirectWithParams("html/function.html",account)
     }
@@ -133,15 +133,6 @@ function redirect(page){
     const url = window.location.href;
     // 使用URLSearchParams解析查询参数
     const userParams = new URLSearchParams(url.split('?')[1]);
-    // 获取特定的查询参数
-    const userName = userParams.get('userName');
-    const userJobID = userParams.get('userJobID');
-    const userOffice = userParams.get('userOffice');
-    const userDepartment = userParams.get('userDepartment');
-    const userEmail = userParams.get('userEmail');
-
-
-
     redirectWithParams(page,userParams)
 }
 
@@ -149,7 +140,6 @@ function redirect(page){
 function redirectWithParams(page, userParams) {
     // 检查params是否是一个对象
     if (typeof userParams === 'object') {
-        console.log(userParams)
         // 将对象转换为查询字符串
         const queryString = Object.keys(userParams)
             .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(userParams[key]))

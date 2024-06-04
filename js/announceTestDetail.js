@@ -1,5 +1,16 @@
-function testAgain(){
-    redirect('test.html')
+window.onload = function(){
+    // 获取当前页面的URL
+    const url = window.location.href;
+
+    // 使用URLSearchParams解析查询参数
+    const userParams = new URLSearchParams(url.split('?')[1]);
+
+    // 获取特定的查询参数
+    const userName = userParams.get('userName');
+    const userJobID = userParams.get('userJobID');
+    const userOffice = userParams.get('userOffice');
+    const userDepartment = userParams.get('userDepartment');
+    const userEmail = userParams.get('userEmail');
 }
 
 function redirect(page){
@@ -23,14 +34,14 @@ function redirectWithParams(page, userParams) {
 
     // 拼接String字符串
     const account =
-        {'userName':userName,
-            'userJobID':userJobID,
-            'userDepartment':userDepartment,
-            'userOffice':userOffice,
-            'userEmail':userEmail,
-            'startTime':startTime,
-            'finishTime':'',
-            'finalGrade':''};
+            {'userName':userName,
+                'userJobID':userJobID,
+                'userDepartment':userDepartment,
+                'userOffice':userOffice,
+                'userEmail':userEmail,
+                'startTime':startTime,
+                'finishTime':'',
+                'finalGrade':''};
 
     // 检查params是否是一个对象
     if (typeof account === 'object') {
