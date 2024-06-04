@@ -35,11 +35,9 @@ function handleInput(){
         {'userName':'陈团圆','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'徐玥','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'郭丽丽','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
-        {'userName':'刘旺','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'李彤','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'叶广辉','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'易迪华','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
-        {'userName':'杨雪丽','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'张大伟','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'苏玥文','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'张一豪','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
@@ -69,7 +67,6 @@ function handleInput(){
         {'userName':'王延涛','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'张玲智','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'范丹丹','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
-        {'userName':'王姗','userJobID':'','userDepartment':'','userOffice':'','userEmail':'','startTime':'','finishTime':'','finalGrade':''},
     ];
 
     const inputValue = document.getElementById("userName").value;
