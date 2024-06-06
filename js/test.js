@@ -16,16 +16,25 @@ function getRadioValue(){
 
     const answerList = [
         {'question':'question1','answer':'a'},
-        {'question':'question2','answer':'a'},
-        {'question':'question3','answer':'a'},
-        {'question':'question4','answer':'a'},
-        {'question':'question5','answer':'a'},
+        {'question':'question2','answer':'b'},
+        {'question':'question3','answer':'c'},
+        {'question':'question4','answer':'c'},
+        {'question':'question5','answer':'c'},
         {'question':'question6','answer':'a'},
         {'question':'question7','answer':'a'},
-        {'question':'question8','answer':'a'},
-        {'question':'question9','answer':'a'},
-        {'question':'question10','answer':'a'},
-        {'question':'question11','answer':'a'},
+        {'question':'question8','answer':'c'},
+        {'question':'question9','answer':'c'},
+        {'question':'question10','answer':'c'},
+        {'question':'question11','answer':'bc'},
+        {'question':'question12','answer':'abc'},
+        {'question':'question13','answer':'bc'},
+        {'question':'question14','answer':'abc'},
+        {'question':'question15','answer':'bc'},
+        {'question':'question16','answer':'abc'},
+        {'question':'question17','answer':'ab'},
+        {'question':'question18','answer':'abc'},
+        {'question':'question19','answer':'abc'},
+        {'question':'question20','answer':'abc'},
     ];
 
     for (let i = 1; i <= 10; i++) {
