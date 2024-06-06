@@ -16,6 +16,9 @@ function parseFromUrl(){
     const userDepartment = userParams.get('userDepartment');
     const userEmail = userParams.get('userEmail');
 
+    if (userJobID === ""){
+        document.getElementById("div_userJobId").hidden = true;
+    }
     if (userOffice === ""){
         document.getElementById("div_userOffice").hidden = true;
     } else {

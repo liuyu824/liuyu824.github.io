@@ -58,12 +58,32 @@ function getRadioValue(){
                     })[0]; // 筛选答案列表返回数组，不存在则返回空数组
 
                 if (rightValue.answer === chosenValue){
-                    finalGrade += 10;
+                    finalGrade += 5;
                 }
                 break;
             }
         }
     }
+
+    let chosenValue = "";
+    for (let i = 11; i <= 20; i++) {
+        chosenValue = "";
+        for (let j = 1; j <= 3; j++) {
+            const checkBox = document.getElementById('question' + i + j)
+            if (checkBox.checked) {
+                chosenValue += checkBox.value;
+            }
+        }
+        const rightValue = answerList.filter(
+            function(e){
+                return e.question === 'question'+i;
+            })[0]; // 筛选答案列表返回数组，不存在则返回空数组
+
+        if (rightValue.answer === chosenValue){
+            finalGrade += 5;
+        }
+    }
+
     document.getElementById('grade').innerHTML = finalGrade.toString();
 
     // 获取当前页面的URL
