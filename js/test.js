@@ -5,7 +5,12 @@ window.onload = function(){
     const userParams = new URLSearchParams(url.split('?')[1]);
     // 填充页面信息
     document.getElementById("userName").innerHTML = userParams.get("userName");
-    document.getElementById("userOffice").innerHTML = userParams.get("userOffice");
+    console.log("员工所属科室为："+userParams.get("userOffice"));
+    if (userParams.get("userOffice") === ""){
+        document.getElementById("div_userOffice").hidden = true;
+    } else {
+        document.getElementById("userOffice").innerHTML = userParams.get("userOffice");
+    }
 }
 
 function getRadioValue(){
