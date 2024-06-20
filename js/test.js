@@ -49,7 +49,7 @@ function getRadioValue(){
         const isSelected = isRadioButtonSelected('question' + i); // 返回true或false
         if (!isSelected){
             //弹窗请全部选择
-            window.alert('请完成全部单选题');
+            window.alert('请完成全部单选及多选题');
             return;
         }
 
