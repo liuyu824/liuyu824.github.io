@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/clear.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/verificationNumbers.js"></script>
+    <script src="./base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="./js/template.js"></script>
+    <script src="./js/index.js"></script>
+    <title> 《条例》学习在线考试</title>
+  </head>
+
+  <body>
+    <div class="lg-bgDiv"></div>
+    <div class="lg-redDiv"></div>
+    <div class="lg-form fontYahei">
+
+      <div class="lg-title">
+        <p>数字化云平台部党支部</p></br>
+        <p style="font-size: 23px">《中国共产党纪律处分条例》学习在线考试</p>
+      </div>
+
+      <div class="form-group lg-nameDiv">
+        <input class="form-control" id="userName" placeholder="员工姓名"
+               type="text" autofocus="" value="" oninput="handleInput()">
+      </div>
+
+      <div class="form-group lg-nameDiv" id="div_userJobId">
+        <input class="form-control" id="userJobID" placeholder="员工工号"
+               type="text" value="">
+      </div>
+
+      <div class="form-group lg-nameDiv">
+        <input class="form-control" id="userDepartment" placeholder="所属部门"
+               type="text" value="">
+      </div>
+
+      <div class="form-group lg-nameDiv" id="div_userOffice">
+        <input class="form-control" id="userOffice" placeholder="所在科室"
+               name="code" type="text" value="">
+      </div>
+
+      <div class="lg-loginDiv text-center">
+        <button class=" lg-btn" onclick="index(this)">登录</button>
+      </div>
+
+    </div>
+  </body>
+</html>

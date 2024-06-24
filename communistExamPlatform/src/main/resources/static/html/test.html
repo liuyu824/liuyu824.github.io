@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/paging.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/test.js"></script>
+    <style>
+        p {
+            line-height: 2; /* 设置行间距为1.5倍字体大小 */
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="Box">
+    <div class="TopBar fontYahei">
+        <div class="TopNav clearfix">
+            <ul class="clearfix Nav pull-left">
+                <li><a onclick="redirect('function.html')">网站首页</a></li>
+            </ul>
+            <div class="pull-right">
+                <a href="../index.html"><span>注销</span></a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="Brand">
+            首页／考试
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="centerBox container-fluid clearfix">
+       <div class="ta-bigDiv">
+           <div class="ta-studentInfo clearfix">
+               <p><a style="font-weight: bold;color: #0f0f0f">姓名：</a><span class="ta-xuehao" id="userName"><!--123456--></span></p>
+               <p id="div_userOffice"><a style="font-weight: bold;color: #0f0f0f">科室：</a><span class="ta-xuehao" id="userOffice"><!--考试练习--></span></p>
+           </div><br><br>
+
+           <a style="font-weight: bold;font-size: 20px">一、单选题</a>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>1、新修订的《中国共产党纪律处分条例》，从(&nbsp;&nbsp;)这个总源头出发，坚持(&nbsp;&nbsp;)，坚持(&nbsp;&nbsp;)导向和(&nbsp;&nbsp;)导向相结合，与时俱进完善纪律规范，进一步严明政治纪律和政治规矩。<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;①党的纪律&nbsp;&nbsp;
+                           ②党章&nbsp;&nbsp;
+                           ③严的基调&nbsp;&nbsp;
+                           ④问题&nbsp;&nbsp;
+                           ⑤效果&nbsp;&nbsp;
+                           ⑥目标&nbsp;&nbsp;
+                           ⑦全面从严&nbsp;&nbsp;
+                           ⑧党的建设&nbsp;&nbsp;<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question1"><span>A.&nbsp;②③④⑥</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question1" ><span>B.&nbsp;①③④⑤</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question1"><span>C.&nbsp;②⑦④⑤</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>2、要坚持(&nbsp;&nbsp;)一起抓，把《条例》纳入党员、干部(培训)必修课，增强遵规守纪的自觉。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question2"><span>A.&nbsp;党章党纪党规</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question2"><span>B.&nbsp;党性党风党纪</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question2"><span>C.&nbsp;党风政风作风</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>3、党员受到警告处分一年内、受到严重警告处分(&nbsp;&nbsp;)内，不得在党内提拔职务或者进一步使用。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question3"><span>A.&nbsp;半年</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question3"><span>B.&nbsp;一年</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question3"><span>C.&nbsp;一年半</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>4、接受、提供可能影响公正执行公务的宴请或者旅游、健身、娱乐等活动安排，情节严重的，给予(&nbsp;&nbsp;)处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question4"><span>A.&nbsp;警告</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question4"><span>B.&nbsp;严重警告</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question4"><span>C.&nbsp;撤销党内职务或者留党察看</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>5、某领导干部（中共党员）将其所辖的汽车城当成“家族产业”，利用职权大肆为亲属经营活动打招呼、批项目，非法牟取巨额利益。按照新修订《中国共产党纪律处分条例》相关规定，其行为违反了(&nbsp;&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question5"><span>A.&nbsp;组织纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question5"><span>B.&nbsp;工作纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question5"><span>C.&nbsp;廉洁纪律</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>6、某局科长章某（中共党员）在一个QQ群里认识了赵某，相互产生了好感。章某去外地办事并与赵某见面，之后两人一直保持不正当关系。后因章某考虑家庭关系，逐渐与赵某疏远不再见面，赵某于是向章某提出赔偿要求，双方经多次协商无果。其后，赵某向“县长信箱”写信，并到章某单位上门反映。章某被免去科长职务，受到党内严重警告处分。按照新修订《中国共产党纪律处分条例》相关规定，章某的行为违反了(&nbsp;&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question6"><span>A.&nbsp;生活纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question6"><span>B.&nbsp;工作纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question6"><span>C.&nbsp;政治纪律</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>7、根据新修订《中国共产党纪律处分条例》规定，党员干部相互利用职权或者职务上的影响为对方及其配偶、子女及其配偶等亲属、身边工作人员和其他特定关系人谋取利益搞权权交易的，给予(&nbsp;&nbsp;)处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question7"><span>A.&nbsp;警告或者严重警告</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question7"><span>B.&nbsp;撤销党内职务</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question7"><span>C.&nbsp;留党察看</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>8、违背社会公序良俗，在公共场所、网络空间有不当言行，情节较重的，给予(&nbsp;&nbsp;)处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question8"><span>A.&nbsp;撤销党内职务或者留党察看</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question8"><span>B.&nbsp;严重警告</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question8"><span>C.&nbsp;警告或者严重警告</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>9、违反相关管理规定，有以下哪些行为，情节较重的，对直接责任者和领导责任者，给予警告或者严重警告处分。<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;①决定或者批准举办各类节会、庆典活动<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;②擅自举办评比达标表彰、创建示范活动<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;③决定或者批准兴建培训中心<br>
+                           &nbsp;&nbsp;&nbsp;&nbsp;④未经批准租用、借用办公用房<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question9"><span>A.&nbsp;①②③</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question9"><span>B.&nbsp;②③④</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question9"><span>C.&nbsp;①②③④</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>10、党和国家机关违反有关规定经商办企业的，对(&nbsp;&nbsp;)，给予警告或者严重警告处分；情节严重的，给予撤销党内职务处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="radio" value="a" name="question10"><span>A.&nbsp;领导责任者和管理责任者</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="b" name="question10"><span>B.&nbsp;领导责任者和重要责任者</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="radio" value="c" name="question10"><span>C.&nbsp;直接责任者和领导责任者</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <br><br>
+           <a style="font-weight: bold;font-size: 20px">二、多选题</a>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>1、中共党员马某某向管理和服务对象张某借款20万元用于购房，张某多次请托马某帮助其儿子调动工作、提拔职务，马某予以允诺。其后，张某向马某表示20万元借款不用归还，马某予以认可。在马某的帮助下，张某儿子先后被调动至多岗位任职，并于2017年8月被提拔为副科职干部。按照新修订《中国共产党纪律处分条例》相关规定，马某某相关行为，违反了(&nbsp;&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question111"><span>A.&nbsp;群众纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question112"><span>B.&nbsp;廉洁纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question113"><span>C.&nbsp;组织纪律</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>2、按照新修订《中国共产党纪律处分条例》有关规定，党组织和党员必须坚守初心使命，牢固树立政治意识、大局意识、核心意识、看齐意识，始终坚定(&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question121"><span>A.&nbsp;道路自信</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question122"><span>B.&nbsp;理论自信</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question123"><span>C.&nbsp;制度自信</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>3、擅自对应当由党中央决定的重大政策问题作出决定、对外发表主张的，对(&nbsp;)，给予严重警告或者撤销党内职务处分；情节严重的，给予留党察看或者开除党籍处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question131"><span>A.&nbsp;主要领导者</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question132"><span>B.&nbsp;直接责任者</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question133"><span>C.&nbsp;领导责任者</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>4、党员领导干部违反工作、生活保障制度，在交通、医疗、警卫等方面为(&nbsp;)和其他特定关系人谋求特殊待遇，情节较重的，给予警告或者严重警告处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question141"><span>A.&nbsp;本人</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question142"><span>B.&nbsp;配偶</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question143"><span>C.&nbsp;子女及其配偶等亲属</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>5、党员被依法留置、逮捕的，党组织应当按照管理权限中止其表决权、选举权和被选举权等党员权利。根据(&nbsp;)处理结果，可以恢复其党员权利的，应当及时予以恢复。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question151"><span>A.&nbsp;审判机关</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question152"><span>B.&nbsp;司法机关</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question153"><span>C.&nbsp;检察机关</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>6、按照新修订《中国共产党纪律处分条例》有关规定，下列行为，属于违反群众纪律的有(&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question161"><span>A.&nbsp;超标准、超范围向群众筹资筹劳、摊派费用，加重群众负担的</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question162"><span>B.&nbsp;违反有关规定扣留、收缴群众款物或者处罚群众的</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question163"><span>C.&nbsp;在管理、服务活动中违反有关规定收取费用的</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>7、2012年6月，党员徐某在担任某市公安分局局长期间，接受万某请托，为万某等人暴力催收债务提供帮助，充当黑恶势力“保护伞”。2019年，该市纪委对徐某涉嫌违纪问题立案审查期间，徐某掩盖其与万某等人权钱交易事实，对抗组织审查。按照新修订《中国共产党纪律处分条例》有关规定,徐某的上述行为违反了(&nbsp;)。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question171"><span>A.&nbsp;政治纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question172"><span>B.&nbsp;工作纪律</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question173"><span>C.&nbsp;生活纪律</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>8、有下列哪些行为，情节严重的，需对直接责任者和领导责任者给予开除党籍处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question181"><span>A.&nbsp;改变公务行程，借机旅游</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question182"><span>B.&nbsp;以学习培训、考察调研等为名变相公款旅游</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question183"><span>C.&nbsp;以招商、参展等名义变相用公款出国（境）旅游</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>9、有下列行为之一，对直接责任者和领导责任者，情节较重的，给予警告或者严重警告处分；情节严重的，给予撤销党内职务或者留党察看处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question191"><span>A.&nbsp;对涉及群众生产、生活等切身利益的问题依照政策或者有关规定能解决而不及时解决，庸懒无为、效率低下，造成不良影响的。</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question192"><span>B.&nbsp;对符合政策的群众诉求消极应付、推诿扯皮，损害党群、干群关系的。</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question193"><span>C.&nbsp;对待群众态度恶劣、简单粗暴，造成不良影响的。</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <form>
+               <div class="ta-testList">
+                   <div class="ta-titleDiv clearfix">
+                       <p>10、新修订的《中国共产党纪律处分条例》在廉洁纪律部分，新增规定，党员干部存在以(&nbsp;)等名义变相送礼的，情节较重的，给予警告或者严重警告处分；情节严重的，给予撤销党内职务或者留党察看处分。<span class="ta-trueKeyblank"></span></p>
+                       <!--<p class="colorRed">正确答案：工农革命</p>-->
+                   </div>
+                   <div class="ta-optionDiv row">
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="a" id="question201"><span>A.&nbsp;讲课费</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="b" id="question202"><span>B.&nbsp;课题费</span>
+                       </div>
+                       <div class="col-xs-3">
+                           <input type="checkbox" value="c" id="question203"><span>C.&nbsp;咨询费</span>
+                       </div>
+                   </div>
+               </div>
+           </form>
+
+           <div class="fixed clearfix ta-fixdDiv">
+<!--               <p class="fl colorBlue">考试剩余时间：<span class="ta-lasttime">&lt;!&ndash;59分59秒&ndash;&gt;</span></p>-->
+               <div class="fr">
+                   <a id="grade"></a>
+                   <span class="in-testbtn in-test" style="width: 80px" onclick="getRadioValue()">提交考试</span>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
+</body>
+</html>

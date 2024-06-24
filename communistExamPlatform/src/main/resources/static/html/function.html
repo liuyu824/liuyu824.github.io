@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/clear.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../base/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/paging.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/function.js"></script>
+    <title>首页</title>
+  </head>
+
+  <body>
+    <div class="Box">
+      <div class="TopBar fontYahei">
+        <div class="TopNav clearfix">
+          <ul class="clearfix Nav pull-left">
+<!--            <li><a onclick="redirect('function.html')">网站首页</a></li>-->
+<!--            <li><a onclick="redirect('achievement.html')">考试成绩</a></li>-->
+          </ul>
+          <div class="pull-right">
+            <a href="../index.html"><span>注销</span></a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="Brand">
+          首页
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="centerBox container-fluid clearfix">
+        <div class="row clearfix">
+          <div class="col-xs-4">
+            <div class="border">
+              <div class="BoxTitle">
+                员工信息
+              </div>
+              <div class="Boxcontent text-center">
+                <p class="headName"></p>
+
+                <div class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    员工姓名：
+                  </div>
+                  <div id="userName" class="text-left col-xs-7 in-userNum">
+                    <!-- 1422110120-->
+                  </div>
+                </div>
+
+                <div id="div_userJobId" class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    员工工号：
+                  </div>
+                  <div id="userJobID" class="text-left col-xs-7 in-userNum">
+                   <!-- 1422110120-->
+                  </div>
+                </div>
+
+                <div id="div_userOffice" class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    所在科室：
+                  </div>
+                  <div id="userOffice" class="text-left col-xs-7 in-collage">
+                  </div>
+                </div>
+
+                <div class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    所属部门：
+                  </div>
+                  <div id="userDepartment" class="text-left col-xs-7 in-collage">
+                    <!--计算机学院-->
+                  </div>
+                </div>
+
+                <div class="row" style="padding:10px 30px;">
+                  <div class="text-right col-xs-5">
+                    员工邮箱：
+                  </div>
+                  <div id="userEmail" class="text-left col-xs-7 in-email">
+                  <!--  163@163.com-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="border">
+              <div class="BoxTitle">
+                公告
+               <!-- <a href="announcementList.html"><span class="fr cursorP moreannList">更多</span></a>-->
+              </div>
+              <div class="Boxcontent boxcontent2" style="padding:15px">
+                <ul class="noticeBody" style="height: 203px;">
+                  <li class="clearfix">
+                    <a onclick="redirect('announceTestDetail.html')">
+                      <div class="pull-left">
+                        《中国共产党纪律处分条例》在线考试
+                      </div>
+                      <div class="pull-right">
+                        [2024-06-20]
+                      </div>
+                    </a>
+                  </li>
+<!--                  <li class="clearfix">-->
+<!--                    <a onclick="redirect('announceNewsDetail.html')">-->
+<!--                      <div class="pull-left">-->
+<!--                        2024年05月23日数字化云平台部党支部党纪学习教育主题党日活动-->
+<!--                      </div>-->
+<!--                      <div class="pull-right">-->
+<!--                        [2024-05-28]-->
+<!--                      </div>-->
+<!--                    </a>-->
+<!--                  </li>-->
+                </ul>
+                <div class="page-footer" style="height: 30px">
+                  <div id="noticePage" class="page_div" style="margin: 7px 0px">
+                  </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
