@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.liuyu.communistexamplatform.demos.web;
+package org.liuyu.communistexamplatform.demos.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

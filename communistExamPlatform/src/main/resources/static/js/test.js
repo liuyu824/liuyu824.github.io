@@ -93,8 +93,23 @@ function getRadioValue(){
 
     // 获取当前页面的URL
     const url = window.location.href;
+
     // 使用URLSearchParams解析查询参数
     const userParams = new URLSearchParams(url.split('?')[1]);
+
+    // 使用原生JavaScript发起请求
+    const xhr = new XMLHttpRequest();
+
+    // 打印日志用来调试使用
+    // console.log("http://localhost:8080/users/save_user?userName="+userParams.get("userName")+"&finalGrade="+finalGrade.toString())
+
+    xhr.open("GET", "http://localhost:8080/users/save_user?username="+userParams.get("userName")+"&finalGrade="+finalGrade.toString(), false); // 路径应该与你的Controller路由匹配
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText); // 处理响应
+        }
+    };
+    xhr.send();
 
     userParams.set('finishTime', finishTime);
     userParams.set('finalGrade',finalGrade.toString());
