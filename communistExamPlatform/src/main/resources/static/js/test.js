@@ -103,7 +103,7 @@ function getRadioValue(){
     // 打印日志用来调试使用
     // console.log("http://localhost:8080/users/save_user?userName="+userParams.get("userName")+"&finalGrade="+finalGrade.toString())
 
-    xhr.open("GET", "http://localhost:8080/users/save_user?username="+userParams.get("userName")+"&finalGrade="+finalGrade.toString(), false); // 路径应该与你的Controller路由匹配
+    xhr.open("GET", "http://47.95.172.23:8800/users/save_user?username="+userParams.get("userName")+"&finalGrade="+finalGrade.toString(), false); // 路径应该与你的Controller路由匹配
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             console.log(xhr.responseText); // 处理响应
