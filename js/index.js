@@ -25,6 +25,7 @@ $(function(){
 function handleInput(){
 
     const userList = [
+        {'userName':'贾芳','userJobID':'工号俺不知道','userDepartment':'综合管理部','userOffice':'','userEmail':'jiafang01@baicmotor.com','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'冯硕','userJobID':'','userDepartment':'智能网联中心','userOffice':'','userEmail':'fengshuo@baicgroup.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'黄殿辉','userJobID':'21238','userDepartment':'数字化云平台部','userOffice':'','userEmail':'huangdianhui@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
         {'userName':'郭梦飞','userJobID':'20017','userDepartment':'数字化云平台部','userOffice':'网联终端应用开发科','userEmail':'guomengfei@bjev.com.cn','startTime':'','finishTime':'','finalGrade':''},
